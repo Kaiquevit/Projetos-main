@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Permanent+Marker&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: "Lilita One", sans-serif;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*menu*/
+
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    padding: 0 5rem;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+}
+
+.content .Lista-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .Lista-menu li a {
+    padding: 1rem 2rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: all 200ms ease;
+}
+
+.content .Lista-menu li a:hover {
+    background-color: black;
+    border-bottom: 2px solid #e51010;
+    color: #e51010;
+}
+
+.first-section {
+    height: 100vh;
+    background-image: url(./Potato-Chips.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.conteudo_principal h1 {
+    font-size: 4rem;
+}
+
+.conteudo_principal h2 {
+    font-size: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .content {
+        padding: 0 3rem;
+    }
+
+    .content .Lista-menu li a {
+        padding: 1rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .conteudo_principal h1 {
+        font-size: 3.6rem;
+    }
+
+    .conteudo_principal h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 0 2rem;
+    }
+
+    .logo h3 {
+        font-size: 1.8rem;
+    }
+
+    .logo img {
+        width: 35px;
+    }
+
+    .content .Lista-menu li a {
+        padding: 0.5rem 1rem;
+        font-size: 1.4rem;
+    }
+
+    .conteudo_principal h1 {
+        font-size: 3.2rem;
+    }
+
+    .conteudo_principal h2 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h3 {
+        font-size: 1.6rem;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .content .Lista-menu {
+        justify-content: space-around;
+    }
+
+    .content .Lista-menu li a {
+        padding: 0.5rem 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .conteudo_principal h1 {
+        font-size: 2.8rem;
+    }
+
+    .conteudo_principal h2 {
+        font-size: 2rem;
+    }
+}
+
+.first-section .conteudo_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-section h1 {
+    color: white;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.first-section h2 {
+    color: #e51010;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+/*Sobre Nós*/
+.sobre_nos {
+    background-color: #1f1e1f;
+    width: 100%;
+    padding: 5rem 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre_nos .main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.sobre_nos .contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.sobre_nos .contentsobre h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.sobre_nos .contentsobre p {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+.sobre_nos .img-cozinha img {
+    width: 400px;
+    height: 400px;
+    margin-left: 2rem;
+    border: 2px solid rgb(155,155,155);
+}
+
+@media (max-width: 768px) {
+    .sobre_nos .main {
+        flex-direction: column;
+    }
+
+    .sobre_nos .contentsobre {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .sobre_nos .img-cozinha img {
+        width: 300px;
+        height: 300px;
+        margin: 2rem 0;
+    }
+
+    .sobre_nos .contentsobre h2 {
+        font-size: 3.2rem;
+    }
+
+    .sobre_nos .contentsobre p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre_nos .contentsobre h2 {
+        font-size: 2.8rem;
+    }
+
+    .sobre_nos .contentsobre p {
+        font-size: 1.4rem;
+    }
+}
+
+.Produtos {
+    width: 100vw;
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Produtos h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.itens {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.produto {
+    width: calc(25% - 2rem);
+    background: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.produto .info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.produto h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.produto h4 {
+    font-size: 1.6rem;
+    color: #777;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .produto {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        width: 100%;
+    }
+}
